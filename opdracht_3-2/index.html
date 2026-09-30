@@ -1,104 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hallo Hi, Abonnementsformulier</title>
+    <title>Hello Hi abonnement</title>
 </head>
+
 <body>
-    <h1>Hallo Hi! Abonnementsformulier</h1>
-    <!--Voornaam-->
-    <form action="#" method="post">
-      <label for="voornaam">voornaam</label>
-      <input type="text" id="voornaam" name="voornaam"
-          pattern="[A-Za-zÀ-ÿ\s-]+"
-          title="Gebruik alleen letters" required>
-            <!--achternaam-->
-            <br>
-            <br>
-            
-    
-            <label for="achternaam">achternaam</label>
-      <input type="text" id="achternaam" name="achternaam"
-          pattern="[A-Za-zÀ-ÿ\s-]+"
-          title="Gebruik alleen letters" 
-          required
-          />
-          <br>
-          <br>
-          <!-- Aanhef -->
-           <label>Aanhef</label>
-           <input type="radio" id="dhr" name="aanhef" value="dhr" checked>
-           <label for="dhr">Dhr.</label>
-           <input type="radio" id="mevr" name="aanhef" value="mevr"/>
-           <label for="mevr">mevr.</label>
-            <input type="radio" id="anders" name="aanhef" value="anders"/>
-           <label for="anders">anders.</label><br>
-           <br>
-           <br>
 
+    <h1>Hello Hi abonnement</h1>
 
-           <!-- Straat -->
-           <label for="straat">Straat met huisnummer</label>
-           <input type="text" id="straat" name="straat" placeholder="Stationsweg 12" required>
-           
-           
-           
+    <form>
 
-        <br>
-        <br>
-        <label for="Postcode">Postcode</label>
-        <input type="text" id="postcode" name="postcode"
-        pattern="[1-9][0-9]{3}\s?[A-Z]{2}"
-        placeholder="1234 AB"
-        required>
-        
-        
-        <br>
-        <br>
-        <label for="Woonplaats">Woonplaats</label>
-        <input type="text" id="woonplaats" name="woonplaats" 
+        Voornaam:<br>
+        <input type="text" name="voornaam"
+            pattern="[A-Za-zÀ-ÿ\s]+"
+            required>
+        <br><br>
 
-        placeholder="Uw Stad">
-        
-        <br>
-        <br>  
-        <label for="Land">Land</label>
-        <input type="text" id="land" name="land"
-        placeholder="Uw Land">  
-         
-        <br>
-         <br>
-        <!-- IBAN -->
-        <label for="iban" IBAN-nummer>IBAN</label>
-        <input type="text" id="iban" name="iban"
-        maxlength="18"
-        pattern="NL [0-9]{2}[A-Z]{4}[0-9][10]"
-        placeholder="NL91ABNA0417164300"
-        required>
-        
-        <br>
-        <br>
-        <!--Abonnement-->
-        <label for="abonnement"> Type Abonnement</label>
-        <select id="abonnement" name="abonnement" required>
-            <option value="kies een abonnement"></option>
-            <option>Mobiel</option>
-            <option>Glasvezel</option>
-            <option>TV</option>
+        Achternaam:<br>
+        <input type="text" name="achternaam"
+            pattern="[A-Za-zÀ-ÿ\s]+"
+            required>
+        <br><br>
 
+        Aanhef:<br>
+        <input type="radio" name="aanhef" value="Dhr." checked> Dhr.
+        <input type="radio" name="aanhef" value="Mevr."> Mevr.
+        <input type="radio" name="aanhef" value="Anders"> Anders
+        <br><br>
 
+        Straat met huisnummer:<br>
+        <input type="text" name="adres"
+            placeholder="Stationsweg 12"
+            required>
+        <br><br>
 
+        Postcode:<br>
+        <input type="text" name="postcode"
+            placeholder="1234 AB"
+            pattern="[0-9]{4} [A-Za-z]{2}"
+            maxlength="7"
+            required>
+        <br><br>
 
+        Woonplaats:<br>
+        <input type="text" name="woonplaats" required>
+        <br><br>
+
+        Land:<br>
+        <select name="land" required>
+            <option value="">Kies een land</option>
+            <option value="Nederland">Nederland</option>
+            <option value="België">België</option>
+            <option value="Duitsland">Duitsland</option>
         </select>
+        <br><br>
 
- 
+        IBAN-nummer:<br>
+        <input type="text" name="iban"
+            placeholder="NL91ABNA0417164300"
+            pattern="NL[0-9]{2}[A-Z]{4}[0-9]{10}"
+            maxlength="18"
+            required>
+        <br><br>
 
+        Type abonnement:<br>
+        <select name="abonnement" required>
+            <option value="">Kies een abonnement</option>
+            <option value="Mobiel">Mobiel</option>
+            <option value="Glasvezel">Glasvezel</option>
+            <option value="TV">TV</option>
+        </select>
+        <br><br>
 
+        Datum van ingang abonnement:<br>
+        <input type="date" name="datum"
+            min="2026-09-30"
+            required>
+        <br><br>
 
+        Looptijd abonnement in maanden:<br>
+        <input type="number" name="looptijd"
+            min="1"
+            required>
+        <br><br>
 
+        Aantal gebruikers:<br>
+        <input type="number" name="gebruikers"
+            min="0"
+            max="4"
+            required>
+        <br><br>
 
+        E-mailadres:<br>
+        <input type="email" name="email" required>  
+        <br><br>
+
+        Wachtwoord aanmaken:<br>
+        <input type="password" name="wachtwoord" required>
+        <br><br>
+
+        <input type="submit" value="Sluit abonnement af">
 
     </form>
-  </body>
+
+</body>
+
 </html>
