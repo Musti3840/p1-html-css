@@ -1,0 +1,205 @@
+/* style.css - Hallo Hi landingspagina
+   gemaakt door mij, week 4 opdracht 3 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+}
+
+/* header met logo links en menu rechts */
+header {
+  background: linear-gradient(to right, #4b0082, #9000ff);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* hero, zwarte achtergrond */
+.hero {
+  background-color: #000000;
+  color: white;
+  padding: 80px 40px;
+  text-align: left;
+}
+
+.hero h2 {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* knoppen in de hero */
+.hero button {
+  border: none;
+  border-radius: 25px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.btn-deal {
+  background-color: #000000;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-ontdek {
+  background-color: #9000ff;
+  color: white;
+}
+
+/* tweede sectie, lichtgrijze achtergrond */
+.mobiel-tv {
+  background-color: #f5f7fa;
+  padding: 70px 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mobiel-tv .tekst {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mobiel-tv h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mobiel-tv p {
+  margin-bottom: 20px;
+}
+
+.mobiel-tv ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.mobiel-tv li {
+  margin-bottom: 10px;
+}
+
+.mobiel-tv img {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid #dddddd;
+}
+
+.btn-mobiel {
+  background-color: #9000ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* footer, ook paars met witte tekst */
+footer {
+  background: linear-gradient(to right, #4b0082, #9000ff);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* de app store knoppen onderaan */
+.stores {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.stores a {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* op kleine schermen alles onder elkaar */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .mobiel-tv {
+    flex-direction: column;
+  }
+}
