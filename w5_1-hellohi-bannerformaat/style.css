@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ftltlt-webfont;
+}
+
+@font-face {
+    font-family: ftltlt-webfont;
+    src: url(/fonts/ftltlt-webfont.woff);
+}
+
+.stage {
+    position: relative;
+    cursor: pointer;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bannerSize {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+}
+
+.box1 {
+    position: absolute;
+    background-color: #9000ff;
+}
+
+.box2 {
+    position: absolute;
+    background-color: #555595;
+    left: 50px;
+}
+
+.box3 {
+    position: absolute;
+    background-color: #b0b0eb;
+    left: 85px;
+}
+.titleText{
+    color: white;   
+    position: absolute;
+    left: 15px;
+    top: 30px;
+
+}
+.HiImg{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 35px;
+    left: 110px;
+}
+
+.subText{
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    color: white;
+    
+}
+
+.productText{
+    position: absolute;
+    left: 15px;
+    top: 108px;
+    color: white;   
+}
+.uspText{
+    position: absolute;
+    left: 15px;
+    top: 135px;
+    color: white;
+    list-style-type: none;
+}
+.simImg{
+    position: absolute;
+    right: 20px;
+    width: 68px;
+    height: auto;
+    top: 35px;
+}
+.circle{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #7272dd; 
+    bottom: -220px;
+    right: -100px;
+    border-radius: 50%;
+}
+
+.btn{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 15px;
+    right: 20px;
+    background-color: rgba(114, 114, 221,0);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnText{
+    color: white;
+    font-size: 13px;
+}
