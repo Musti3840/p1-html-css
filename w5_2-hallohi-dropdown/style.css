@@ -1,38 +1,89 @@
-body{
-    margin:0;
-}
-nav ul{
+body {
     margin: 0;
-    position: 0;
-}
-nav li{
-    display: inline-block;
-    list-style: none;
-    position: relative;
-    padding: 15px;
+    font-family: Arial;
 }
 
-nav a{
-    text-decoration: none;
+header {
+    background-color: #9000ff;
     color: white;
-
+    padding: 20px;
 }
 
-.drop-down li{
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0%;
-    width: max-content;
-    background-color: purple;
+    background-color: white;
+    width: 180px;
 }
 
-.drop-down li{
-    display: block;
-}
-nav li:hover > .drop-down{
-    display: block;
-}
-.drop-down a:hover{
+.dropdown-menu a {
     color: black;
+    display: block;
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: black;
+    background-color: #eeeeee;
+}
+
+.hero {
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.zwart {
+    background-color: black;
+}
+
+.paars {
+    background-color: #9000ff;
+}
+
+.mobiel {
+    background-color: #f5f7fa;
+    padding: 30px;
+}
+
+footer {
+    background-color: #9000ff;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    margin-right: 15px;
 }
