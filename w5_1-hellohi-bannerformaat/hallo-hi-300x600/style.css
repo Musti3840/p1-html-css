@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ftltlt-webfont;
+}
+
+@font-face {
+    font-family: ftltlt-webfont;
+    src: url(/fonts/ftltlt-webfont.woff);
+}
+
+.stage {
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bannerSize {
+    width: 300px;
+    height: 600px;
+    background-color: black;
+}
+
+.box {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 30px;
+    height: 7px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.box1 {
+    background-color: #9000ff;
+}
+
+.box2 {
+    background-color: #555595;
+    left: 50px;
+}
+
+.box3 {
+    background-color: #b0b0eb;
+    left: 85px;
+}
+
+.titleText {
+    color: white;
+    position: absolute;
+    left: 28px;
+    top: 55px;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.HiImg {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 40px;
+    left: 180px;
+}
+
+.subText {
+    position: absolute;
+    left: 28px;
+    top: 122px;
+    color: white;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.productText {
+    position: absolute;
+    left: 28px;
+    top: 160px;
+    color: white;
+    font-size: 14px;
+}
+
+.simImg {
+    position: absolute;
+    left: 18px;
+    width: 105px;
+    height: auto;
+    top: 205px;
+}
+
+.uspText {
+    position: absolute;
+    left: 28px;
+    top: 335px;
+    color: white;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #7272dd;
+    bottom: -330px;
+    right: -100px;
+    border-radius: 50%;
+}
+
+.btn {
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    bottom: 20px;
+    left: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnText {
+    color: white;
+    font-size: 16px;
+}
