@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  max-width: 1200px;
+}
+
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+
+.menu {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.login {
+  flex: 1;
+  text-align: center;
+}
