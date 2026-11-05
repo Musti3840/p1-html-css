@@ -1,107 +1,31 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Responsive exercise</title>
-  <style>
-    body {
-      margin: 0;
-      color: black;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      height: 100px;
-      padding: 0 100px;
-      background-color: #ed4e4e;
-      color: white;
-    }
-
-    .mobile-blok {
-      display: none;
-      width: 20px;
-      height: 20px;
-      background-color: white;
-    }
-
-    section {
-      height: 300px;
-      padding: 20px 100px;
-    }
-
-    .s1 { background-color: #facc22; }
-    .s2 { background-color: #f0912a; }
-    .s3 { background-color: #6ab04c; }
-
-    @media (max-width: 1024px) {
-      header {
-        justify-content: center;
-        background-color: #ff6b81;
-      }
-
-      section {
-        padding: 20px;
-        color: white;
-      }
-
-      .s1 { background-color: #ff4757; }
-      .s2 { background-color: #5352ed; }
-      .s3 { background-color: #3742fa; }
-    }
-
-    @media (max-width: 600px) {
-      header {
-        justify-content: space-between;
-        padding: 0 30px;
-        background-color: #6c6ee0;
-      }
-
-      .mobile-blok {
-        display: block;
-      }
-
-      section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 250px;
-      }
-
-      .s1 { background-color: #7ed6df; }
-      .s2 { background-color: #e056fd; }
-      .s3 { background-color: #30336b; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive exercise</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <header>
+        <h1>Logo</h1>
+        <div class="menu-blokje"></div>
+    </header>
 
+    <section class="sectie1">
+        <h2>Title 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
+    </section>
 
-  <header>
-    <h1>Logo</h1>
-    <div class="mobile-blok"></div>
-  </header>
+    <section class="sectie2">
+        <h2>Title 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
+    </section>
 
-
-  <section class="s1">
-    <h2>Title 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
-  </section>
-
-
-  <section class="s2">
-    <h2>Title 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
-  </section>
-
-
-  <section class="s3">
-    <h2>Title 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
-  </section>
-
-
+    <section class="sectie3">
+        <h2>Title 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
+    </section>
 </body>
-</html>  
+</html>
