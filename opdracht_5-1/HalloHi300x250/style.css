@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ftltlt-webfont;
+}
+
+@font-face {
+    font-family: ftltlt-webfont;
+    src: url(/fonts/ftltlt-webfont.woff)
+}
+
+
+
+
+.stage {
+    position: relative;
+    cursor: pointer;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bannerSize {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+}
+
+.box {
+    width: 15px;
+    height: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 15px;
+    height: 5px;
+    position: absolute;
+}
+
+.box1 {
+    position: absolute;
+    background-color: #9000ff;
+left: 11px;
+}
+
+.box2 {
+    position: absolute;
+    background-color: #55559f;
+    left: 30px;
+    
+}
+
+.box3 {
+    position: absolute;
+    background-color: #b0b0eb;
+    left: 50px;
+   
+}
+
+.title {
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.hiimg {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 25px;
+    left: 95px;
+
+}
+
+.subText {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 80px;
+
+}
+
+.productText {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 108px;
+}
+
+.uspText {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 135px;
+    list-style-type: none;
+}
+
+.simImg {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    width: 68px;
+    height: auto;
+
+}
+
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #7272dd;
+    bottom: -220px;
+    right: -100px;
+
+
+}
+
+.btn {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 15px;
+    right: 20px;
+    background-color: rgba(114, 114, 221, 0);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnText {
+    color: #ffffff;
+    font-size: 14px;
+}

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ftltlt-webfont;
+}
+
+@font-face {
+    font-family: ftltlt-webfont;
+    src: url(/fonts/ftltlt-webfont.woff)
+}
+
+
+
+
+.stage {
+    position: relative;
+    cursor: pointer;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bannerSize {
+    width: 300px;
+    height: 600px;
+    background-color: black;
+    left: 15px;
+    top: 15px;
+}
+
+.box {
+    width: 100px;
+    height: 30px;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 15px;
+    height: 5px;
+    position: absolute;
+    left: 15px;
+    right: 20px;
+    top: 20px;
+
+}
+
+.box1 {
+    position: absolute;
+    background-color: #9000ff;
+    left: 20px;
+}
+
+.box2 {
+    position: absolute;
+    background-color: #55559f;
+    left: 40px;
+}
+
+.box3 {
+    position: absolute;
+    background-color: #b0b0eb;
+    left: 60px;
+}
+
+.title {
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 60px;
+}
+
+.hiimg {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 22px;
+    left: 160px;
+
+}
+
+.subText {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 90px;
+    font-size: 30px;
+
+}
+
+.productText {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 125px;
+    font-size: 20px;
+}
+
+.uspText {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 300px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.simImg {
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    width: 105px;
+    height: auto;
+    transform: rotate(90deg);
+
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #7272dd;
+    bottom: -210px;
+    right: 0px;
+    left: -50px;
+
+
+}
+
+.btn {
+    position: absolute;
+    width: 230px;
+    height: 70px;
+    bottom: 30px;
+    right: 135px;
+    left: 30px;
+    background-color: rgba(114, 114, 221, 0);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.btnText {
+    color: #ffffff;
+    font-size: 30px;
+}
